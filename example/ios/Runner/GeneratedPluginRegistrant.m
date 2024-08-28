@@ -12,12 +12,6 @@
 @import auto_orientation;
 #endif
 
-#if __has_include(<flutter_screen_wake/FlutterScreenWakePlugin.h>)
-#import <flutter_screen_wake/FlutterScreenWakePlugin.h>
-#else
-@import flutter_screen_wake;
-#endif
-
 #if __has_include(<package_info_plus/FPPPackageInfoPlusPlugin.h>)
 #import <package_info_plus/FPPPackageInfoPlusPlugin.h>
 #else
@@ -46,7 +40,6 @@
 
 + (void)registerWithRegistry:(NSObject<FlutterPluginRegistry>*)registry {
   [AutoOrientationPlugin registerWithRegistrar:[registry registrarForPlugin:@"AutoOrientationPlugin"]];
-  [FlutterScreenWakePlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterScreenWakePlugin"]];
   [FPPPackageInfoPlusPlugin registerWithRegistrar:[registry registrarForPlugin:@"FPPPackageInfoPlusPlugin"]];
   [PathProviderPlugin registerWithRegistrar:[registry registrarForPlugin:@"PathProviderPlugin"]];
   [FVPVideoPlayerPlugin registerWithRegistrar:[registry registrarForPlugin:@"FVPVideoPlayerPlugin"]];

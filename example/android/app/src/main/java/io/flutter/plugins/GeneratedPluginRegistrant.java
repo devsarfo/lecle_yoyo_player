@@ -21,11 +21,6 @@ public final class GeneratedPluginRegistrant {
       Log.e(TAG, "Error registering plugin auto_orientation, de.bytepark.autoorientation.AutoOrientationPlugin", e);
     }
     try {
-      flutterEngine.getPlugins().add(new br.com.erickhaendel.flutter_screen_wake.FlutterScreenWakePlugin());
-    } catch (Exception e) {
-      Log.e(TAG, "Error registering plugin flutter_screen_wake, br.com.erickhaendel.flutter_screen_wake.FlutterScreenWakePlugin", e);
-    }
-    try {
       flutterEngine.getPlugins().add(new dev.fluttercommunity.plus.packageinfo.PackageInfoPlugin());
     } catch (Exception e) {
       Log.e(TAG, "Error registering plugin package_info_plus, dev.fluttercommunity.plus.packageinfo.PackageInfoPlugin", e);

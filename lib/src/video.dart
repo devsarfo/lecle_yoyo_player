@@ -4,7 +4,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_screen_wake/flutter_screen_wake.dart';
+// import 'package:flutter_screen_wake/flutter_screen_wake.dart';
 import 'package:http/http.dart' as http;
 import 'package:lecle_yoyo_player/lecle_yoyo_player.dart';
 import 'package:lecle_yoyo_player/src/model/models.dart';
@@ -311,7 +311,7 @@ class _YoYoPlayerState extends State<YoYoPlayer> with SingleTickerProviderStateM
       ScreenUtils.toggleFullScreen(fullScreen);
     }
 
-    FlutterScreenWake.keepOn(true);
+    // FlutterScreenWake.keepOn(true);
   }
 
   @override
